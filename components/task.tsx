@@ -1,15 +1,15 @@
-import React from 'react'
-import { cn } from '@/libs/utils'
+import React from 'react';
+import { cn } from '@/libs/utils';
 
-export default function Task({
-  title,
-  description,
-  status
+const Task = ({
+    title,
+    description,
+    status
 }: {
-  title: string
-  description: string
-  status: string
-}) {
+    title: string;
+    description: string;
+    status: string;
+}) => {
   return (
     <div
       className={cn(
@@ -42,4 +42,6 @@ export default function Task({
       </button>
     </div>
   )
-}
+};
+
+export default Task;
